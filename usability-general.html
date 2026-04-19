@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Luana Kimley — Usability overview (General)" />
+  <title>Usability Overview — General</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="portfolio-topnav">
+    <div class="portfolio-topnav__inner">
+      <a class="nav-brand" href="index.html" rel="noopener noreferrer">
+        <img src="https://i.postimg.cc/x8w18HrD/playmetrix-logo.png" height="50" alt="PlayMetrix" />
+      </a>
+      <nav class="site-nav" aria-label="Portfolio pages">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li>
+            <details class="nav-details">
+              <summary>My Roles</summary>
+              <ul class="submenu">
+                <li><a href="frontend-developer.html">Frontend Developer</a></li>
+                <li><a href="ui-ux-designer.html">UI/UX Designer</a></li>
+                <li><a href="graphic-designer.html">Graphic Designer</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="nav-details">
+              <summary>Usability Overview</summary>
+              <ul class="submenu">
+                <li><a href="usability-general.html" aria-current="page">General</a></li>
+                <li><a href="usability-manager-coach.html">Manager &amp; Coach</a></li>
+                <li><a href="usability-player.html">Player</a></li>
+                <li><a href="usability-physio.html">Physio</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="journal.html">Technical Project Journal</a></li>
+          <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-wrap content-page">
+    <h1 class="heading-accent">
+      <span class="low-highlight">Usability Overview — General</span>
+    </h1>
+    <section class="section-block" aria-labelledby="overview-heading">
+      <article class="content-panel">
+        <p>In this page, I am going to do a usability overview on general tasks that are not specific to any roles,
+          detailing:</p>
+        <ul class="prose-list">
+          <li>Initial/current <strong>problems</strong></li>
+          <li><strong>Implemented solutions</strong></li>
+          <li><strong>Further enhancements</strong>/recommendations</li>
+        </ul>
+        <p>The problems detailed here mostly arise from our user testing, but I will also do my own analysis by going
+          through the app and some problems that I noticed while developing the frontend.</p>
+        <p>I will be recommending enhancements and solutions from both design and technical perspectives as the UI/UX
+          Designer and Frontend Developer.</p>
+      </article>
+    </section>
+    <section class="section-block" aria-labelledby="onboarding-heading">
+      <details class="section-details">
+        <summary class="section-heading">Onboarding the App</summary>
+        <h3><strong>Problem</strong></h3>
+        <ul class="prose-list">
+          <li>Some users, specifically those in the older age group had difficulties in getting onboarding with the app,
+            as we did not have any help and/or documentation. This also violates <em>Jakob Nielsen and Rolf Molich’s Ten
+              User Interface Guidelines #10: <strong>Help and documentation</strong></em>. </li>
+        </ul>
+        <p> </p>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li>
+            <strong>Introduction Screens</strong> - these set of screens will be shown upon first launch of application,
+            giving the users a brief introduction of PlayMetrix. It also provides a link to our Linktree which has links
+            to our social medias which they can contact us from, also with a link to our guidebook.
+          </li>
+        </ul>
+        <p> <img class="w-full" alt="Screenshot 2024-04-04 at 02.54.33.png.1"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454667&amp;view=128916&amp;embedded=1&amp;text=693945">
+        </p>
+        <ul class="prose-list">
+          <li>
+            <strong>Online Tutorial</strong> - we also came up with the idea of providing an online tutorial, which is
+            then made by Shakira. This will provide a comprehensive guidance for the manager and the physio, which are
+            the users we found needed it the most from our user testing.
+          </li>
+          <li>
+            <strong>In-app Features Showcase </strong>- to further enhance the user's onboarding experience, I also
+            developed a set of screens with the features of each user. Each user role in our application has different
+            functionalities, so I ensured that these screens are personalised to showcase key features of that
+            particular user role.
+          </li>
+        </ul>
+        <p><strong>Manager View</strong></p>
+        <p> <img class="w-full" alt="Screenshot 2024-04-04 at 03.11.47 (1).png"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454668&amp;view=128916&amp;embedded=1&amp;text=693945">
+        </p>
+        <p> <strong>Physio View</strong></p>
+        <p> <img class="w-full" alt="Screenshot 2024-04-04 at 03.23.34 (1).png.1"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454672&amp;view=128916&amp;embedded=1&amp;text=693945">
+        </p>
+        <p> <strong>Player View</strong></p>
+        <p><strong> <img class="w-full" alt="Screenshot 2024-04-04 at 03.27.09 (1).png"
+              src="https://mahara.dkit.ie/artefact/file/download.php?file=454676&amp;view=128916&amp;embedded=1&amp;text=693945"></strong>
+        </p>
+        <p> <strong>Coach View</strong></p>
+        <p><strong> <img class="w-full" alt="Screenshot 2024-04-04 at 03.31.01 (1).png"
+              src="https://mahara.dkit.ie/artefact/file/download.php?file=454678&amp;view=128916&amp;embedded=1&amp;text=693945"></strong>
+        </p>
+        <p> </p>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li>We did not have the chance to test the new tutorial and in-app features showcase, but having real user
+            feedback would be useful to see how we could enhance the content of our onboarding and if it is generally
+            useful or not for the user.</li>
+          <li>Another approach I could think of that would enhance the user onboarding would to use the <strong><a
+                href="https://pub.dev/packages/showcaseview">showcaseview</a> Flutter package</strong>, which would give
+            the user in-app step-by-step tutorial/annotations of the features as they go around the app. I was initially
+            going to implement this in our app, but after some technical considerations and time constraints, we
+            resorted to use the <a href="https://pub.dev/packages/introduction_screen">introduction_screen</a> package
+            for the in-app showcase instead.</li>
+          <li>Here is a<strong> test plan</strong> that I made for this feature, focusing on questions that would give
+            direct feedback for the usability of the app:</li>
+        </ul>
+        <iframe class="pdf-frame" title="User testing showcase features (PDF)"
+          src="assets/pdf/User-Testing-Showcase-Features.pdf" allow="fullscreen"></iframe>
+      </details>
+    </section>
+    <section class="section-block" aria-labelledby="signing-up-heading">
+      <details class="section-details">
+        <summary class="section-heading">Signing Up</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li>While conducting user testing, we found out that some users, also in the older age group, being
+            overwhelmed by the sign up screen as they would need to enter a lot of information on one screen.</li>
+          <li><strong>Initial sign up flow</strong>:</li>
+          <iframe width="300" height="450" src="https://www.youtube.com/embed/YXf5XeSYwYg" title="Manager Sign Up"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen="" class="usability-video-iframe"></iframe>
+        </ul>
+        <h3>Implemented Solutions</h3>
+        <ul class=" prose-list">
+          <li> <strong>Multi-step sign up form</strong> - Implementing a sign up form that consists of multiple
+            screens
+            with the user only needing to input one or two text fields would reduce the feeling of being overwhelmed.
+            I
+            also gave a clear indicator of the number of steps needed to finish the form so they will have a clear
+            indicator of the progress they made.</li>
+          <iframe width="300" height="450" src="https://www.youtube.com/embed/PH5m7vXV-l4" frameborder="0"
+            allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" class="usability-video-iframe"></iframe>
+        </ul>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li>A <strong>single sign on (SSO)</strong> with several different platforms would definitely be more
+            beneficial for the user, as this will reduce the time they need for signing up and they would not need to
+            remember additional passwords and use their existing accounts. However, due to the way our database is set
+            up and time constraints, we could not implement this in our application for the time being.</li>
+        </ul>
+      </details>
+    </section>
+    <section class="section-block" aria-labelledby="signing-in-heading">
+      <details class="section-details">
+        <summary class="section-heading">Signing In</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li>It is highlighted in the user testing that users, particularly those that are not tech-savvy are also
+            having difficulties in signing in as they were confused on where to put in the login credentials.</li>
+          <li>While testing the app, we also came across the issue of the user sessions not saving, which is quite
+            annoying and disrupt the user's workflow as they will need to sign in again every time after they close the
+            app.</li>
+        </ul>
+        <p> </p>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li><strong>Google Single Sign On (SSO) </strong>- In order to streamline the user sign in, Nathan implemented
+            Google Sign On functionality for both the backend and frontend. After conducting more user tests, this
+            proved to be useful as it really reduced the time the user needs to sign in.</li>
+          <iframe width="560" height="450" src="https://www.youtube.com/embed/W7I7vIwHHlg" frameborder="0"
+            allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" class="usability-video-iframe"></iframe>
+          <li>
+            <strong>Sessions </strong>- I used Flutter's <a
+              href="https://pub.dev/packages/shared_preferences">shared_preferences</a> package to implement a local
+            session storage to save user credentials securely after sign in, so they wouldn't need to re-sign in every
+            time after they close the app.
+          </li>
+          <img width="319" height="451" alt="Screenshot 2024-04-05 at 22.18.21.png.1"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454679&amp;view=128916&amp;embedded=1&amp;text=694613">
+        </ul>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li>Implementing<strong> SSOs with different platforms</strong> would be something that we could look at. A
+            research on which SSO is used the most by our user demographics would be beneficial too before implementing
+            this.</li>
+          <li>Implementing <strong>auto-fill password</strong> would also be something to be considered by saving the
+            password to Google or Apple keychain so the user can sign in easily to their account without having to
+            recall their password.</li>
+        </ul>
+      </details>
+    </section>
+    <section class="section-block" aria-labelledby="home-screen-heading">
+      <details class="section-details">
+        <summary class="section-heading">Home Screen</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li>It is pointed out that the initial design of our home screen does not really include the features that the
+            user would use the most or what they would want to see first when they open the app.</li>
+          <img width="907" height="525" alt="Screenshot 2024-04-22 at 02.28.55.png"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454701&amp;view=128916&amp;embedded=1&amp;text=694127">
+        </ul>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li>
+            <strong>Home screen redesign </strong>- Driven from that feedback, I redesigned the home screen to be more
+            compact and to include a crucial feature of our app, the notifications. At first glance, our users would
+            want to know what they missed or what is happening in the team through the notifications, so it is important
+            to highlight this in the home screen.
+          </li>
+        </ul>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li>
+            <strong>Personalised &amp; customisable home screen </strong>- Currently, we have some menu buttons that
+            will redirect the user to other screens, but these menu buttons are not personalised or customisable to the
+            user. Going forward, it would be a good recommendation to further fulfil <em><em>Jakob Nielsen and Rolf
+                Molich’s Ten User Interface Guidelines #7: </em>Flexibility and Efficiency of Use</em> by showing the
+            screens mostly used by the user or recently accessed ones which can be known from user testing or data
+            analytics of the user's app usage. Having it to be customisable, with the users being able to choose the
+            menu buttons they want shown in their home screen would also be beneficial for the <em>flexibility</em>
+            aspect.
+          </li>
+          <img width="888" height="511" alt="Screenshot 2024-04-22 at 02.29.49.png"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454702&amp;view=128916&amp;embedded=1&amp;text=694127">
+        </ul>
+      </details>
+    </section>
+    <p>References</p>
+    <ul class="prose-list">
+      <li>Wong, E. (2024). <em>User Interface Design Guidelines: 10 Rules of Thumb</em> [online]. Available from: <a
+          href="https://www.interaction-design.org/literature/article/user-interface-design-guidelines-10-rules-of-thumb">https://www.interaction-design.org/literature/article/user-interface-design-guidelines-10-rules-of-thumb</a>
+        [accessed 18 April 2024].</li>
+    </ul>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Luana Kimley · Team Pesado · PlayMetrix</p>
+    </div>
+  </footer>
+  <script src="js/nav.js" defer></script>
+</body>
+
+</html>

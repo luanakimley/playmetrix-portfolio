@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Luana Kimley — Miscellaneous" />
+    <title>Human Factors in Design Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="portfolio-topnav">
+        <div class="portfolio-topnav__inner">
+            <a class="nav-brand" href="index.html" rel="noopener noreferrer">
+                <img src="https://i.postimg.cc/x8w18HrD/playmetrix-logo.png" height="50" alt="PlayMetrix" />
+            </a>
+            <nav class="site-nav" aria-label="Portfolio pages">
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li>
+                        <details class="nav-details">
+                            <summary>My Roles</summary>
+                            <ul class="submenu">
+                                <li><a href="frontend-developer.html">Frontend Developer</a></li>
+                                <li><a href="ui-ux-designer.html">UI/UX Designer</a></li>
+                                <li><a href="graphic-designer.html">Graphic Designer</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="nav-details">
+                            <summary>Usability Overview</summary>
+                            <ul class="submenu">
+                                <li><a href="usability-general.html">General</a></li>
+                                <li><a href="usability-manager-coach.html">Manager &amp; Coach</a></li>
+                                <li><a href="usability-player.html">Player</a></li>
+                                <li><a href="usability-physio.html">Physio</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="journal.html">Technical Project Journal</a></li>
+                    <li><a href="miscellaneous.html" aria-current="page">Miscellaneous</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="page-wrap">
+        <h1 class="heading-accent">
+            <span class="low-highlight">Human Factors in Design Project</span>
+        </h1>
+        <h2>Part 1: Evaluating In-Game Application Usability Using UTSE</h2>
+        <section>
+            <details class="section-details">
+                <summary class="section-heading">Problem Definition</summary>
+                <p>One of the Core Key Issues that we that we expected to face during the development of our
+                    application, was could this application be used mid game by the background staff to inform each
+                    other of a players potential injury that suffered. </p>
+                <p>When carrying out our UTSE we had three potential users that could be using the application mid game:
+                </p>
+                <ul>
+                    <li>The Manager</li>
+                    <li>The Coach(es)</li>
+                    <li>The Physio(s)</li>
+                </ul>
+                <p>During the development of this application, there were many potential human factors issues that we
+                    were wary about such as:</p>
+                <ul>
+                    <li>Location where is the application being used:
+                        <ul>
+                            <li>Are they at home by the fireside</li>
+                            <li>Are they in their office</li>
+                            <li>Is it being used in training</li>
+                            <li>Is it being used mid game (if its being used mid game what is the atmosphere like, what
+                                are the weather conditions like)</li>
+                        </ul>
+                    </li>
+                    <li>The User - and issues they may have using the application:
+                        <ul>
+                            <li>Will their age cause an issue</li>
+                            <li>Are they tech savvy</li>
+                            <li>Have they any visual impairments </li>
+                            <li>Have they any Physical impairments </li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <details class="section-details">
+                <summary class="section-heading">UI Redesign</summary>
+                <p>A recurring theme among the challenges faced, including cognitive load, ergonomic considerations, and
+                    human error/performance, centres around the responsibilities of the manager/physio during a match.
+                    This underscores the necessity of adapting the application's interface to better accommodate these
+                    demands.</p>
+                <h1>Solution: Implementing <strong>Match Mode</strong> for the app to use during matches
+                </h1>
+                <p>The Match Mode will feature a simplified UI mode which will only feature specific functionalities
+                    that the manager/physio/coach will use during a match. A button/switch will be implemented in the UI
+                    so that the manager/physio can click/toggle on it to switch to this mode when a match is starting.
+                </p>
+                <h2>Activating Match Mode</h2>
+                <p>There would be several ways to activate this mode:</p>
+                <ol>
+                    <li>Activate it manually from the settings screen</li>
+                    <li>Based on the time and location of the match set on the schedule. If the app detects that the
+                        manager is in the location of the match and the match is almost starting,
+                        <ul>
+                            <li>A pop-up (if user is in-app) or a notification (if user is not in-app) prompting if the
+                                user wants to turn on match mode will show up.</li>
+                            <li>A floating button will also show up for the manager to toggle between modes</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>Having multiple ways for the user to activate the Match Mode in the app will give them more
+                    flexibility to seamlessly integrate Match Mode into their workflow, ensuring they can access
+                    essential functionalities with ease and efficiency.</p>
+                <h2>Match Mode UI Overview</h2>
+                <h3>Features</h3>
+                <p>The features that will be included in this Match Mode will differ based on the role.</p>
+                <p>The functionalities for <strong>Manager</strong> will include:</p>
+                <ul>
+                    <li>Recording the total duration played for each player during the match</li>
+                    <li>Choosing players for substitution</li>
+                </ul>
+                <p>The functionalities for <strong>Physio</strong> will include:</p>
+                <ul>
+                    <li>Flagging an injured player for further check up</li>
+                </ul>
+                <h3> Look and Feel</h3>
+                <ul>
+                    <li>In crowded stadiums with adverse weather conditions, the UI should have high-contrast colours
+                        and large, easy-to-read text to ensure visibility even in poor lighting.
+                        <ul>
+                            <li>This would also help if the user using the app has accessibility issues such as visually
+                                impaired, colour blindness, and visual perception.</li>
+                        </ul>
+                    </li>
+                    <li>Dark mode feature can also be implemented to adjust the colour scheme for better readability in
+                        low-light environments for night matches.</li>
+                </ul>
+                <h3>Gestures</h3>
+                <ul>
+                    <li>To enhance usability during match conditions, it's crucial to consider the gestures required for
+                        app interaction. This entails thoughtful considerations, such as:<br>
+                        <ul>
+                            <li>Strategically positioning buttons to align with natural hand movements</li>
+                            <li>Incorporating intuitive gestures that facilitate seamless navigation and interaction
+                                with the app</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h1>Manager View</h1>
+                <p><img class="w-full" alt="Human Factors in Design-11.jpg"
+                        src="https://mahara.dkit.ie/artefact/file/download.php?file=447199&amp;view=126820&amp;embedded=1&amp;text=680754">
+                </p>
+                <ul>
+                    <li>To simplify the manager's workflow when recording player's duration, automatic calculation of it
+                        can be implemented in the app.</li>
+                    <li>Main view is presented based on the formation of the players on the pitch. As the manager would
+                        be familiar with this, it would make it easier for them to find the player they would want to
+                        select.</li>
+                    <li>Manager can choose the player they would want to substitute then select the substitute player
+                        they want to bring in from the list.
+                        <ul>
+                            <li>The list of substitutes will be sorted based on their position. <span
+                                    style="font-weight:400;">The players with the same position with the player being
+                                    replaced will appear on top as they will most likely be the one being chosen,</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>After choosing, the confirmation page will show up and the manager can click confirm when the
+                        substitution happens, this will then record the time the player went off the pitch and also
+                        record the time the substitute went in the pitch.
+                        <ul>
+                            <li>Calculation can be done in the system using data from the other recorded time related to
+                                the match (match start time, match end time, half time).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h1>Physio View</h1>
+                <p><img class="w-full" alt="Human Factors in Design-12.jpg"
+                        src="https://mahara.dkit.ie/artefact/file/download.php?file=447200&amp;view=126820&amp;embedded=1&amp;text=680757">
+                </p>
+                <ul>
+                    <li>During a match, when a player is injured, the physio will need to change the player's status to
+                        unavailable</li>
+                    <li>Physio will select the injured player then will be asked to confirm if this is the player that
+                        is injured to minimise human error.</li>
+                    <li>This will then notify the manager and coach that the player is unavailable.</li>
+                    <li>It will also notify the physio to remind themselves to schedule further check up with the player
+                        to assess the injury.</li>
+                </ul>
+                <h1>Design and Interaction</h1>
+                <ul>
+                    <li>Contrasting colours are vital for this app especially during Match Mode as the conditions can
+                        make it hard for the user to see, and it is also vital for users with visual impairments.
+                        <ul>
+                            <li>Contrast checking the colours before using them is essential to do and can be done <a
+                                    href="https://webaim.org/resources/contrastchecker/" target="_blank">here</a>.
+                            </li>
+                        </ul>
+                    </li>
+                    <p><img width="280" height="299" alt="Screenshot 2024-03-08 at 02.50.17.png.1"
+                            src="https://mahara.dkit.ie/artefact/file/download.php?file=447204&amp;view=126820&amp;embedded=1&amp;text=680759"><img
+                            width="294" height="320" alt="Screenshot 2024-03-08 at 02.53.14.png.1"
+                            src="https://mahara.dkit.ie/artefact/file/download.php?file=447205&amp;view=126820&amp;embedded=1&amp;text=680759"><img
+                            width="311" height="339" alt="Screenshot 2024-03-08 at 02.54.48.png.1"
+                            src="https://mahara.dkit.ie/artefact/file/download.php?file=447206&amp;view=126820&amp;embedded=1&amp;text=680759">
+                    </p>
+                    <p><em>* </em><strong>Note</strong><em>:</em> The colour green and blue failed one of the normal
+                        text
+                        tests but it does not matter in this context as it is only going to be used for large texts and
+                        UI
+                        components</p>
+                </ul>
+                <ul>
+                    <li>In addition to contrasting colours, we will also include icons and text descriptions for the
+                        traffic light system to accommodate for colour blindness</li>
+                    <p> <img width="530" alt="Screenshot 2024-03-11 at 13.45.36.png"
+                            src="https://mahara.dkit.ie/artefact/file/download.php?file=447477&amp;view=126820&amp;embedded=1&amp;text=680759">
+                    </p>
+                    <p> <img width="487" height="195" alt="Screenshot 2024-03-11 at 13.49.14.png"
+                            src="https://mahara.dkit.ie/artefact/file/download.php?file=447478&amp;view=126820&amp;embedded=1&amp;text=680759">
+                    </p>
+                </ul>
+
+                <ul>
+                    <li>The decision to position two buttons, one on the far left and the other on the far right at the
+                        bottom of the page for confirm and cancel functions, is based on mimicking natural hand
+                        movements. Typically, users hold their phones with one hand and use their thumb for navigation.
+                        Placing the buttons in these locations facilitates easier access for the user. Moreover, the
+                        placement of the confirm button on the right side highlights on the fact that most people are
+                        right-handed, making it more reachable and aligning with its frequent usage.</li>
+                    <p><img width="268" height="403" alt="Screenshot 2024-03-08 at 03.05.36.png.1"
+                            src="https://mahara.dkit.ie/artefact/file/download.php?file=447209&amp;view=126820&amp;embedded=1&amp;text=680759"><img
+                            width="252" height="413" alt="Screenshot 2024-03-08 at 03.06.14.png.1"
+                            src="https://mahara.dkit.ie/artefact/file/download.php?file=447210&amp;view=126820&amp;embedded=1&amp;text=680759">
+                    </p>
+                    <li>The app also incorporates intuitive back gestures for seamless navigation. Users have the option
+                        to
+                        utilise either the traditional back button located in the top left corner or simply swipe right
+                        to
+                        go back. This dual approach caters to diverse user preferences, providing flexibility and ease
+                        of
+                        navigation within the app interface.</li>
+                </ul>
+                <ul>
+            </details>
+        </section>
+        <section>
+            <details class="section-details">
+                <summary class="section-heading">Presentation Slides</summary>
+                <iframe class="pdf-frame usability-video-iframe" title="HFD Presentation (PDF)"
+                    src="assets/pdf/Pesado-HFD-Pres.pdf" allow="fullscreen"></iframe>
+            </details>
+        </section>
+        <hr />
+        <h2>Part 2: User-Focused Analysis of the Manager Role</h2>
+        <section>
+            <details class="section-details">
+                <summary class="section-heading">Problem Definition</summary>
+                <p>The original problem we had was seeing how well our application could be used during matchday
+                    conditions to perform certain functions such as calculating a player's match duration and updating
+                    player's injury history. </p>
+                <p>For this stage of the project we will be taking the improvements made by our design specialist which
+                    was to have a match day screen mode that would limit the amount of steps needed to perform these
+                    aforementioned functions. </p>
+                <p>Our goals with this test is to provide a report that answers the simple question can our application
+                    be used in matchday (or training) environment.</p>
+                <h1>UTSE Analysis</h1>
+                <ol>
+                    <li>
+                        <h2>User</h2>
+                        <ul>
+                            <li>Name: John O'Brien</li>
+                            <li>Age: 59</li>
+                            <li>Position: Manager of Clann Eireann GAA Team</li>
+                        </ul>
+                        <p>At 59 years old, John O'Brien has an imposing demeanour that reflects his
+                            extensive expertise
+                            in the Gaelic Athletic Association (GAA). Standing 6 feet tall, he exudes
+                            authority and
+                            confidence, which naturally attracts attention. Despite his age, John maintains
+                            a strong and
+                            athletic physique, demonstrating his commitment to health and the activity he
+                            enjoys. Wants
+                            to be able to track his players easily without it being overwhelmed.</p>
+                    </li>
+                    <li>
+                        <h2>System</h2>
+                        <p>In ordinary circumstances John would typically be using a clipboard pen and paper, however as
+                            this is the championship final John will using a iPad Pro 6th Generation that was given to
+                            him by the club </p>
+                    </li>
+                    <li>
+                        <h2>Task</h2>
+                        <p>John's task is simple, he wants to be able to use the app to keep track of players that he
+                            has substituted off either because of an injury or he due to player fatigue (which could
+                            potentially lead to injuries)</p>
+                    </li>
+                    <li>
+                        <h2>Environment</h2>
+                        <p>It's the 2nd half of the championship final which is being held in the Athletics Grounds
+                            in
+                            Armagh,
+                            Its a cold overcast and wet night in a stadium filled with 18,000 people and the
+                            floodlights
+                            shining
+                            down on pitch. One of John's players has gone down and holding their head after a
+                            collision
+                            with
+                            an
+                            opposing teams player. John is sitting in the dugout and due to the heavy fog and rain
+                            is
+                            unable
+                            to
+                            recognise which one of his players it is that is injured, however as he starts to use
+                            the
+                            app he
+                            begins walking out to the technical with in order to get a better view of which one of
+                            his
+                            players
+                            is done while the raucous crowd jeering and booing behind him. </p>
+                    </li>
+                </ol>
+            </details>
+        </section>
+        <section>
+            <details class="section-details">
+                <summary class="section-heading">UI Redesign - Interaction Analysis</summary>
+                <h1>Overview</h1>
+                <p>Going on from CA1, I decided to develop a prototype from the wireframe that I made. This is important
+                    for the accessibility aspect of our app, as we are focusing on colour blindness, and it is also
+                    important to evaluate how the colours look in a match condition, to determine if the information on
+                    the screen can be perceived and seen clearly by the manager during that situation. </p>
+                <p>The image below shows my initial design for the prototype based on the wireframe:</p>
+                <p><img width="1200" alt="Screenshot 2024-04-20 at 05.47.56.png"
+                        src="https://mahara.dkit.ie/artefact/file/download.php?file=454031&amp;view=128772&amp;embedded=1&amp;text=692930">
+                </p>
+                <p> </p>
+                <h1>Nielsen and Molich’s User Interface Guidelines</h1>
+                <p>In order to further improve the <em><a title="What is Usability?" target="_blank"
+                            href="https://www.interaction-design.org/literature/topics/usability">usability</a>,
+                        utility, and <a title="What is Desirability?"
+                            href="https://www.interaction-design.org/literature/topics/desirability"
+                            target="_blank">desirability</a>
+                    </em>of my design, I decided to look into <strong>Nielsen and Molich’s ten user interface
+                        guidelines</strong> [1]<strong> </strong>and do an analysis on how my design adheres to some of
+                    the guidelines, and make appropriate changes or recommendations to make it adhere to the
+                    corresponding guideline.</p>
+                <p> </p>
+                <h2 id="user_1._visibility_of_system_status-2">Visibility of System Status</h2>
+                <p>Whenever users interact with a system, they need to know whether the interaction was successful [2].
+                    Confirmation of user action is a part of having a visibility of system status. A way this could be
+                    implemented in this design is to provide a confirmation after the manager has successfully made a
+                    substitution. On mobile applications, this is commonly done using <a
+                        href="https://m2.material.io/components/snackbars#anatomy" target="_blank">Snackbars</a>. The
+                    Snackbar can show
+                    text such as: "Substitution successful!".</p>
+                <p> </p>
+                <h2 id="user_2._system_match_to_the_real_world-3">System Match to the Real World</h2>
+                <p>Users expect that UI elements which reflect material objects be similar to those objects from the
+                    real world [3]. While designing the wireframe, my focus was on how the user interface should match
+                    real life situations during a match, which can also be seen reflected in the prototype, especially
+                    the main screen. The main screen of "Match Mode" shows each player on the pitch in their respective
+                    positions on the pitch, which would be something that the manager would be really familiar with.
+                    This will help them in choosing the player they want to take off as it will make them easier to find
+                    the player they have in mind. Having other visual cues like pictures, number, and last name clearly
+                    shown will also give more context to the player in that position.</p>
+                <p> </p>
+                <h2 id="user_3._user_control_and_freedom-4">User Control and Freedom</h2>
+                <p>Part of a great user experience is nurturing users’ feeling of control over the user interface (UI)
+                    they happen to be using. Users should be able to quickly correct mistakes or backtrack on choices
+                    made. [4] Currently, the design has implemented back buttons and a slide right gesture to allow the
+                    user to go back to the previous page if for example they selected the wrong player. In the
+                    confirmation page the manager also have the option to cancel this step if they made a mistake in
+                    choosing a player they are going to put in. Other than this automatic mode, it would also be
+                    beneficial to have the manager revise the time manually during normal mode as they might make
+                    mistakes and was not on time when they do this action.</p>
+                <p> </p>
+                <h2 id="user_5._error_prevention-6">Error Prevention</h2>
+                <p>Nielsen mentioned that a way to prevent error is to check for them and present users with a
+                    confirmation option before they commit to the action [5]. This is implemented in my prototype,
+                    specifically the confirmation page where the manager needs to either confirm or cancel the
+                    substitution being made. Another potential error that the manager might make is an error when
+                    choosing the player they want to take off from the main screen. A way to prevent this is to only
+                    allow player selection after a long tap/long press. It adds a layer of confirmation to the action,
+                    minimising potential errors. The trade off is that it might cause a delay as this is a process that
+                    needs to be timely. A way to figure out going forward is by conducting user testing on this feature.
+                </p>
+                <p> </p>
+                <h2 id="user_6._recognition_rather_than_recall-7">Recognition rather than Recall</h2>
+                <p>In my prototype design, I implemented this by giving the manager clear visuals on the main screen
+                    using the players image, number, position, and also their surnames. I also made sure that the
+                    information shown (image, number, surname) is consistent throughout the other pages where the
+                    players are shown to help them recognise the players and would not have to depend on their memory to
+                    recall which player they want to select as they have clear visuals on the players' details.</p>
+                <p> </p>
+                <h2 id="user_8._aesthetic_and_minimalist_design-9">Aesthetic and Minimalist Design</h2>
+                <p>Interfaces should not contain information that is irrelevant or rarely needed [5]. In the design of
+                    my prototype, I implemented this principle to only have needed information to keep the UI clean and
+                    easy to look at. In the main match page, I only included the players on the pitch and a button to
+                    exit the mode, keeping it focused on the pitch itself. On the second page, the substitute screen, I
+                    included only relevant information such as the player selected and the players available for
+                    substitution. Same thing with the confirmation page, I provided the user with only the essential
+                    information, which are a visualisation of who is being taken off and who is being sent in and
+                    buttons to cancel or confirm.</p>
+                <p> </p>
+                <h2 id="user_10._help_and_documentation-11">Help and Documentation</h2>
+                <p>Currently, there are no tutorials or documentation helping the manager on how to navigate around the
+                    "Match Mode" UI, but we do have some of this implemented in our "normal" mode of the app, providing
+                    a guidebook and a set of getting started screens. Implementing this for the new mode will definitely
+                    be beneficial for the manager to streamline their learning process of the new mode, as it is quite
+                    different from the "normal" mode they are used to. Providing guided step by step tutorial showcasing
+                    specific features of the app in-app during the first time the manager opens the mode would also be
+                    something that would be nice to have as it shows a more detailed step-by-step overview of the new
+                    features in this mode.</p>
+                <p> </p>
+                <h1>One Thumb and One Eyeball</h1>
+                <p>In a distracted environment, such as what PlayMetrix is going to be used for in this context, which
+                    is a pitch during a high intensity match, the best form of smartphone interaction is a high-speed,
+                    easy-to-use one [6]. A test such as the one thumb and one eyeball test, or in other words
+                    "<strong>Can users perform a certain number of tasks with just one hand in under 60
+                        seconds?</strong>" would be a suitable method to test the app for this situation.</p>
+                <p> </p>
+                <p><img width="622" height="441" alt="g4HKYUWhgsVKXV5yzxA8bQDJ7kK1Ui2wcN4qRRiq.png"
+                        src="https://mahara.dkit.ie/artefact/file/download.php?file=454033&amp;view=128772&amp;embedded=1&amp;text=692930">
+                </p>
+                <p>© <a title="What is Interaction Design (IxD)?"
+                        href="https://www.interaction-design.org/literature/topics/interaction-design">Interaction
+                        Design</a> Foundation, CC BY-SA 4.0</p>
+                <p> </p>
+                <p>In designing the UI, it is important that the essential buttons, or the buttons that the user will
+                    use the most would be in the user's "easy" comfort zone to allow the user to reach it easily and
+                    therefore making the task easier to complete. I initially assumed in the wireframe that it would
+                    make more sense for the "Confirm" button should be on the right side to accommodate the majority
+                    right-handed people who will hold their phone using their right hand, but after seeing the
+                    Hand-reach Comfort Zone by the Interaction Design Foundation, I was proven wrong as most of the
+                    hand-reach comfort zone for right hand users would actually be on the left side of the screen.</p>
+                <p>To analyse how the confirmation screen adheres to this, I overlayed the hand-reach comfort zone to
+                    the screen and it can be seen that both buttons are within the "easy" zone, which is a good thing.
+                    But it can be seen that the "Confirm" button is nearer to the border of the "Ok" zone, while the
+                    "Cancel" button is in a more central position. This would make the "Cancel" button easier to reach
+                    than the "Confirm" button, which is not what we want as the manager would more likely to "Confirm"
+                    than to "Cancel".</p>
+                <p><img width="1200" alt="Screenshot 2024-04-20 at 06.33.31.png"
+                        src="https://mahara.dkit.ie/artefact/file/download.php?file=454037&amp;view=128772&amp;embedded=1&amp;text=692930">
+                </p>
+                <p> </p>
+                <p>After knowing this information, I think it would be appropriate to make some minor changes on the
+                    prototype by switching the position of the "Cancel" and "Confirm" button in the confirmation page,
+                    resulting in a final prototype as seen below:</p>
+                <p><img width="1200" alt="Screenshot 2024-04-20 at 06.20.37.png"
+                        src="https://mahara.dkit.ie/artefact/file/download.php?file=454034&amp;view=128772&amp;embedded=1&amp;text=692930">
+                </p>
+                <p> </p>
+                <p>References</p>
+                <p class="ref-p">
+                    [1] Wong, E. (2024). <em>User Interface Design Guidelines: 10 Rules of Thumb</em> [online].
+                    Available
+                    from: <a target="_blank"
+                        href="https://www.interaction-design.org/literature/article/user-interface-design-guidelines-10-rules-of-thumb">https://www.interaction-design.org/literature/article/user-interface-design-guidelines-10-rules-of-thumb</a>
+                    [accessed 18 April 2024].</p>
+                <p class="ref-p">[2] Harley, A. (2018). <em>Visibility of System Status (Usability Heuristic</em>
+                    <em>#1)
+                    </em>[online]. Available from: <a target="_blank"
+                        href="https://www.nngroup.com/articles/visibility-system-status/">https://www.nngroup.com/articles/visibility-system-status/</a>
+                    [accessed 18 April 2024].
+                </p>
+                <p class="ref-p">[3] Kaley, A. (2018). <em>Match Between the System and the Real World (Usability
+                        Heuristic #2)
+                    </em>[online]. Available from: <a target="_blank"
+                        href="https://www.nngroup.com/articles/match-system-real-world/">https://www.nngroup.com/articles/match-system-real-world/</a>
+                    [accessed 18 April 2024].</p>
+                <p class="ref-p">[4] Rosala, M. (2020). <em>User Control and Freedom (Usability Heuristic #3)
+                    </em>[online].
+                    Available
+                    from: <a target="_blank"
+                        href="https://www.nngroup.com/articles/user-control-and-freedom/">https://www.nngroup.com/articles/user-control-and-freedom/</a>
+                    [accessed 19 April 2024].</p>
+                <p class="ref-p">[5] Nielsen, J. (2024). <em>10 Usability Heuristics for User Interface Design</em>
+                    [online].
+                    Available from: <a target="_blank"
+                        href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a>
+                    [accessed 19 April 2024].</p>
+                <p class="ref-p">[6] Siang, T. Y. (2023). <em>The One Thumb, One Eyeball Test for Good Mobile
+                        Design</em>
+                    [online].
+                    Available from: <a target="_blank"
+                        href="https://www.interaction-design.org/literature/article/using-mobile-apps-the-one-thumb-one-eyeball-test-for-good-mobile-design">https://www.interaction-design.org/literature/article/using-mobile-apps-the-one-thumb-one-eyeball-test-for-good-mobile-design</a>
+                    [accessed 19 April 2024].</p>
+                </ul>
+            </details>
+        </section>
+        <section>
+            <details class="section-details">
+                <summary class="section-heading">Overall Findings</summary>
+                <h1>Problem Addressed</h1>
+                <h2>Initial</h2>
+                <p>Initially, our problem was how PlayMetrix would be used during a match, this includes two key user
+                    roles, the manager and the physio. The manager would use the app to record the duration played by
+                    players and the physio would use the app to record injuries/edit player availability mid-game.</p>
+                <p> </p>
+                <h2>Interim</h2>
+                <p>We refined the problem scope to only focus on the manager recording the duration during a live match
+                    and how the manager can use PlayMetrix to do this task.</p>
+                <p> </p>
+                <h2>Final</h2>
+                <p>Going from and the interim problem definition, we wanted to focus on how the wireframe developed from
+                    CA1 can be used for these match day conditions for a manager to record duration played by a player
+                    and analyse it from a human error and performance, cognitive, ergonomics, accessibility, and
+                    interaction perspective.</p>
+                <p> </p>
+                <h1>Key Human Factors Issue</h3>
+                    <h2>Human Errors &amp; Performance</h2>
+                    <ul>
+                        <li><strong>Live Match Performance -</strong> If the manager substitutes the wrong player on or
+                            off,
+                            what can be done to remedy this.</li>
+                        <li><strong>Data loss - </strong>The effects of data loss for the manager.</li>
+                    </ul>
+                    <h2>Cognitive</h2>
+                    <ul>
+                        <li>Reduced short-term and long-term memory load.</li>
+                        <li>Increased efficiency and accuracy.</li>
+                        <li>Improved user experience for managers.</li>
+                        <li>Better data recording for informed decision-making.</li>
+                        <li>Reduces the amount of cognitive load/error on John.</li>
+                        <li>I recommend for a manager to use this "match mode" on match day</li>
+                    </ul>
+                    <h2>Ergonomics</h2>
+                    <ul>
+                        <li><strong>Location -</strong> Where the user is i.e stadium or pitch, where they are in that
+                            stadium are they in the dugout, the technical area or banished to the stands, are they
+                            standing
+                            or sitting</li>
+                        <li><strong>Weather -</strong> Clear, Dry, Overcast, Rainy, Thunder, Snow, different conditions
+                            may
+                            prove to have different outcomes</li>
+                        <li><strong>Device -</strong> If the user has a small screen can they see all the functions or
+                            have
+                            they to scroll/navigate to them. If the devices screen is wet will that cause misinputs, if
+                            the
+                            sun is hitting the screen will the user be able to see the screen, if the battery is dying
+                            then
+                            have they to be conservative in how they use the app </li>
+                        <li><strong>The User - </strong>How are they holding the device, are the looking at it in a way
+                            that
+                            can cause neck strain, according to Colorado State gripping the tablet with a key pinch
+                            (where
+                            the finger and thumb awkwardly grip the device can cause injury if done for extended periods
+                            of
+                            time</li>
+                    </ul>
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li><strong>Red and green color similarity for Protanopia -</strong> The similarities between
+                            red
+                            and green for Protanopia make both colours almost impossible to distinguish between. This
+                            can
+                            pose a challenge for a manager who may suffer from Protanopia colour blindness which may
+                            affect
+                            their ability to use the app when making a substitution.</li>
+                        <li><strong>Impact of distorted grey shades -</strong> The colour grey across all types of
+                            colour
+                            blindness that was analysed showed that the colour grey was perceived has different
+                            variations
+                            and shades of grey depending on the type of colour blindness. The distortion of grey may
+                            hinder
+                            the manager's ability to identify the player being taken off the field, this added
+                            complexity
+                            can hinder a manager's efficiency if they suffer from colour blindness.</li>
+                    </ul>
+                    <h2>Interaction</h2>
+                    <ul>
+                        <li><strong>Lack of help/guidance - </strong>The match mode UI does not have any resources or
+                            tutorials the manager can refer to when they are first getting started.</li>
+                        <li><strong>Placement of buttons -</strong> In the confirmation screen, the button for the
+                            "confirm"
+                            is placed on a more unsuitable position on the screen based on the hand-reach comfort zone
+                            even
+                            though it is the "default" button the manager wants.</li>
+                        <li><strong>No confirmation shown after successful action </strong>- This might make the users
+                            unsure whether their task was done successfully or not.</li>
+                    </ul>
+                    <p> </p>
+                    <h1>Re-Design Recommendations</h1>
+                    <h2>Human Errors &amp; Performance</h2>
+                    <ul>
+                        <li><strong>Provide clear and immediate feedback</strong> to managers for every action they
+                            perform,
+                            especially in critical operations like substitution.</li>
+                        <li><strong>Use visual cues</strong>, such as colour-coded alerts or notifications, to indicate
+                            errors, warnings, or successful actions.</li>
+                        <li><strong>Provide an undo functionality </strong>to undo substitutions.</li>
+                        <li><strong>Default to MatchMode during a live match</strong></li>
+                    </ul>
+                    <h2>Cognitive</h2>
+                    <ul>
+                        <li>Allow audio input to take players off during e.g. "Take Michael off"</li>
+                        <li>Offer pre populated "subs" section so the manager doesn't have to think of who can play
+                            instead.
+                        </li>
+                        <li>Post match review - visual graph of analytics so the manager knows how the team performed
+                        </li>
+                    </ul>
+                    <h2>Ergonomics</h2>
+                    <ul>
+                        <li>Recommended Sub Features would prevent the user scrolling for a player to find</li>
+                        <li>A case that has something on the back like a pop socket for the user to grip on instead of
+                            awkwardly holding the tablet which could cause injury </li>
+                        <li>Screencast mode to project to on a larger screen so the user isn't straining their neck by
+                            looking down</li>
+                        <li>Noise Cancelling Headphones that blocks out the physical distractions such as crowds and
+                            opposition </li>
+                    </ul>
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li> Having a customisation colour blindness profile filter in the settings of the app allows
+                            the
+                            manager to be able to change how the colours are perceived based on the type of colour
+                            blindness
+                            they may suffer from. This setting when applied should be applied across all screens for the
+                            app
+                            for the manager.</li>
+                    </ul>
+                    <h2>Interaction</h2>
+                    <ul>
+                        <li><strong>Provide useful tutorials and documentations -</strong> This can be in the form of an
+                            online guidebook and/or in-app interactive tutorials. </li>
+                        <li><strong>Switch the placement of buttons -</strong> The "confirm" and "cancel" button
+                            positions
+                            should be switched to make it more natural for the manager to click the "confirm" instead of
+                            "cancel".</li>
+                        <li><strong>Show confirmation after successful action </strong>- This would highlight the system
+                            status and give user reassurance that they successfully did the task.</li>
+                    </ul>
+                    <p> </p>
+                    <h1>Benefits/Improvements</h1>
+                    <h2>Human Errors &amp; Performance</h2>
+                    <ul>
+                        <li>Match Mode Undo can reduce Managers' panic if they substitute incorrectly or change their
+                            minds.
+                        </li>
+                        <li>Recovery of data will reduce stress on Managers.</li>
+                        <li>Allows Managers' to focus on the game by reducing steps to activate Match Mode.</li>
+                    </ul>
+                    <h2>Cognitive</h2>
+                    <ul>
+                        <li>Match mode significantly reduces memory load by taking away the need for calculations</li>
+                        <li>3 less steps to carry out which reduces the load on the manager.</li>
+                        <li>Visuals help with the memory with having profile pictures in the match line up</li>
+                        <li>Helps the manager with the cognitive load we can control </li>
+                    </ul>
+                    <h2>Ergonomics</h2>
+                    <ul>
+                        <li> Matchday Mode helps making tasks for the manager simpler</li>
+                        <li>The larger device make it easier to read the screen better </li>
+                        <li>The Cover on the screen helps prevent it from getting wet and prevents misinputs</li>
+                        <li>A UV Screen Protector prevents Bright Lights from making the screen eligible</li>
+                        <li>Having a 100% charged device means there is no fear it having to use it conservatively </li>
+                    </ul>
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li>The use of iconography like the 'tick' on the border of the substitute players identifies
+                            that a
+                            player is available. This improvement makes it easier for the manager to understand that a
+                            player is available by the visual representation of the 'tick' regardless of colour.</li>
+                        <li>The use of text labels like 'OUT' and 'IN' is great to indicate what player is being
+                            substituted
+                            off and what player is being substituted on regardless of colour. </li>
+                    </ul>
+                    <h2>Interaction</h2>
+                    <ul>
+                        <li> A big improvement in the interaction aspect is that the whole "Match Mode" really
+                            simplifies
+                            the interactions and steps needed for the manager to record the duration as they would not
+                            need
+                            to input anything, they just need to click on buttons and it only takes 3 taps.</li>
+                    </ul>
+                    <p> </p>
+                    <h1>Limitations </h1>
+                    <h2>Human Errors &amp; Performance</h2>
+                    <ul>
+                        <li> Managers' may change their mind about substitutions during the match.</li>
+                        <li>Managers' may not want Match Mode by default during Live Matches.</li>
+                    </ul>
+                    <h2>Cognitive</h2>
+                    <ul>
+                        <li>Subbing people can be confusing as the manager has to think on the spot - whereas if the
+                            manager
+                            can prepare the list in order he wants and it automatically subs that person on it would
+                            reduce
+                            the load massively.</li>
+                    </ul>
+                    <h2>Ergonomics</h2>
+                    <ul>
+                        <li>Can get easily overwhelmed by physical distractions such as the crowd or bright lights</li>
+                        <li>Poor Weather Conditions could cause misinputs </li>
+                    </ul>
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li>If a manager with colour blindness relies strongly on visuals it may cause some confusion
+                            when
+                            using the app as the manager will perceive colours differently</li>
+                        <li>The grey colour distortions depending on the type of colour blindness may cause challenges
+                            for
+                            the manager identifying players in the team lineout screen</li>
+                    </ul>
+                    <h2>Interaction</h2>
+                    <ul>
+                        <li>A limitation in the current implementation of the match mode is that the manager will need
+                            to be
+                            accurate time-wise when performing the action. It might be hard to ensure perfect accuracy
+                            in
+                            the timing of the substitution due to the other factors happening and it might be a busy
+                            situation on the sideline when a substitution is made. A recommendation to minimise this is
+                            by
+                            also having a manual duration input in the normal mode so the manager can fix the duration
+                            later
+                            on if any inaccuracies are made.</li>
+                    </ul>
+                    <p> </p>
+                    <h1>What We Learned</h1>
+                    <h2>Human Errors &amp; Performance</h2>
+                    <ul>
+                        <li>Manager error is inevitable so allowing them to rectify this is crucial.</li>
+                        <li>Managers' may choose to sub on limited/unavailable players.</li>
+                        <li>Managers' may accidentally exit match mode with easy slip button on the bottom.</li>
+                    </ul>
+                    <h2>Cognitive</h2>
+                    <ul>
+                        <li> The needs for the manager to calculate their own time while our application can perform
+                            this
+                            for them is a massive advantage.</li>
+                        <li>Reducing tasks for the manager to carry out also helps massively with cognitive overload.
+                        </li>
+                        <li>Visuals and pictures can help with reducing cognitive load</li>
+                        <li>Applying guidelines to design is crucial for ease of user engagement.</li>
+                    </ul>
+                    <h2>Ergonomics</h2>
+                    <ul>
+                        <li>The location of the user is crucial to how successfully they could use the app, in the
+                            comfort
+                            of their dugout they could perform the task quicker and easier then when they were stood out
+                            in
+                            the technical area</li>
+                        <li>The Type of the device and how you're holding it also can also effect performance, </li>
+                        <li>Weather Conditions will effect how successful the user is in completing tasks on the
+                            application
+                        </li>
+                    </ul>
+                    <h2>Accessibility</h2>
+                    <ul>
+                        <li>How different colours are perceived across all types of colour blindness can be
+                            significantly
+                            different depending on the type of colour blindness. </li>
+                        <li>However, with significant visual changes perceived by someone with colour blindness, some
+                            colours can be perceived as very similar to each other Examples of this are red and green
+                            for
+                            someone who may suffer from Protanopia.</li>
+                    </ul>
+                    <h2>Interaction</h2>
+                    <ul>
+                        <li>I really had an interesting deep probe on Nielsen and Molich’s ten user interface
+                            guidelines<strong> </strong>and I feel like these guidelines really provide clear and
+                            intuitive
+                            guidelines on how to design websites with better usability.</li>
+                        <li>I also did some research on how people mostly interact with their phone, for example from
+                            the
+                            way they hold it, and it is important to adjust your design based on this.</li>
+                    </ul>
+                    <p> </p>
+                    <h1>How Human Factors Impacted the Design</h1>
+                    <p>After doing a deep probe on a specific interaction (manager recording duration) and considering
+                        the
+                        human factors related to that, we really had a lot of insights on how to design applications
+                        that
+                        are made for humans and consider aspects such as ergonomics, cognitive, human error and
+                        performance,
+                        as well as designing for accessibility. This led us into realising that there are a lot of
+                        things
+                        that we need to consider when designing an application's interface as human are complex
+                        creatures
+                        and each and every one of us perceive things differently.</p>
+                    <p>What makes sense to one person might not make sense to others, so following standards and
+                        guidelines
+                        while designing an interface is important to ensure that our app's design is usable for other
+                        people
+                        and not causing frustration. User testing is also an important aspect in this as we want to have
+                        feedback from real humans and understand how they perceive our application from their point of
+                        view.
+                        Overall, by incorporating user feedback and considering human factors throughout the design
+                        process,
+                        we can create interfaces that are intuitive, efficient, and enjoyable for a diverse range of
+                        users.
+                    </p>
+            </details>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <p>Luana Kimley · Team Pesado · PlayMetrix</p>
+        </div>
+    </footer>
+    <script src="js/nav.js" defer></script>
+</body>
+
+</html>

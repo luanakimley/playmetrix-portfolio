@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Luana Kimley — Usability (Physio)" />
+  <title>Usability Overview — Physio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="portfolio-topnav">
+    <div class="portfolio-topnav__inner">
+      <a class="nav-brand" href="index.html" rel="noopener noreferrer">
+        <img src="https://i.postimg.cc/x8w18HrD/playmetrix-logo.png" height="50" alt="PlayMetrix" />
+      </a>
+      <nav class="site-nav" aria-label="Portfolio pages">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li>
+            <details class="nav-details">
+              <summary>My Roles</summary>
+              <ul class="submenu">
+                <li><a href="frontend-developer.html">Frontend Developer</a></li>
+                <li><a href="ui-ux-designer.html">UI/UX Designer</a></li>
+                <li><a href="graphic-designer.html">Graphic Designer</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="nav-details">
+              <summary>Usability Overview</summary>
+              <ul class="submenu">
+                <li><a href="usability-general.html">General</a></li>
+                <li><a href="usability-manager-coach.html">Manager &amp; Coach</a></li>
+                <li><a href="usability-player.html">Player</a></li>
+                <li><a href="usability-physio.html" aria-current="page">Physio</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="journal.html">Technical Project Journal</a></li>
+          <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-wrap content-page">
+    <h1 class="heading-accent">
+      <span class="low-highlight">Usability Overview — Physio</span>
+    </h1>
+    <section class="section-block" aria-labelledby="overview-heading">
+      <article class="content-panel">
+        <p>In this page, I am going to do a usability overview on tasks for physios, detailing:</p>
+        <ul class="prose-list">
+          <li>Initial/current <strong>problems</strong></li>
+          <li><strong>Implemented solutions</strong></li>
+          <li><strong>Further enhancements</strong>/recommendations</li>
+        </ul>
+        <p>The problems detailed here mostly arise from our user testing, but I will also do my own analysis by going
+          through the app and some problems that I noticed while developing the frontend.</p>
+        <p>I will be recommending enhancements and solutions from both design and technical perspectives as the UI/UX
+          Designer and Frontend Developer.</p>
+      </article>
+    </section>
+    <section class="section-block" aria-labelledby="recording-injuries-heading">
+      <details class="section-details">
+        <summary class="section-heading">Recording Injuries</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li>Initially, we did not have a list of injuries that the user could choose from that would pre-fill the
+            injury details such as the injury name, type, recovery method, etc. so the physio would need to fill it in
+            manually which would take time and cause multiple duplicating entries in the database.</li>
+          <li>We also did not have the feature where the physio could upload injury reports so the player couldn't
+            access their detailed report and injury plan through our app.</li>
+          <img width="1200" alt="Screenshot 2024-04-22 at 02.04.16.png.2"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454695&amp;view=128850&amp;embedded=1&amp;text=694091">
+        </ul>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li><strong>Having a list of the most common GAA injuries and letting the physio choose from them </strong>-
+            Michael did a research on the most common GAA injuries and from that research, he populated our database
+            with those injuries. After that I implemented this function in the frontend by making a dropdown populated
+            with data about the injuries that the physio could choose from. I also implemented a search bar within the
+            dropdown so that they can find the injury that they want with ease.</li>
+          <li><strong>Implement uploading injury report PDF </strong>- We made changes in the database, backend, and
+            frontend to accommodate uploading and viewing PDF in-app.</li>
+          <iframe width="300" height="450" src="https://www.youtube.com/embed/_AfpwtSeZB4" title="Add Injury"
+            frameborder="0" class="usability-video-iframe"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </ul>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li> Our current solution is quite effective, yet it still poses a problem: what if the injury the player
+            suffered is not included in our list? We shared a survey for physios asking for feedback regarding this and
+            the majority of them would prefer if we have both options, choosing from a pre-filled dropdown and entering
+            it manually, which is something that we can do in the future.</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Luana Kimley · Team Pesado · PlayMetrix</p>
+    </div>
+  </footer>
+  <script src="js/nav.js" defer></script>
+</body>
+
+</html>

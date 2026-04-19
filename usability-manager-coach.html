@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Luana Kimley — Usability (Manager &amp; Coach)" />
+  <title>Usability Overview — Manager &amp; Coach</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="portfolio-topnav">
+    <div class="portfolio-topnav__inner">
+      <a class="nav-brand" href="index.html" rel="noopener noreferrer">
+        <img src="https://i.postimg.cc/x8w18HrD/playmetrix-logo.png" height="50" alt="PlayMetrix" />
+      </a>
+      <nav class="site-nav" aria-label="Portfolio pages">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li>
+            <details class="nav-details">
+              <summary>My Roles</summary>
+              <ul class="submenu">
+                <li><a href="frontend-developer.html">Frontend Developer</a></li>
+                <li><a href="ui-ux-designer.html">UI/UX Designer</a></li>
+                <li><a href="graphic-designer.html">Graphic Designer</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="nav-details">
+              <summary>Usability Overview</summary>
+              <ul class="submenu">
+                <li><a href="usability-general.html">General</a></li>
+                <li>
+                  <a href="usability-manager-coach.html" aria-current="page">Manager &amp; Coach</a>
+                </li>
+                <li><a href="usability-player.html">Player</a></li>
+                <li><a href="usability-physio.html">Physio</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="journal.html">Technical Project Journal</a></li>
+          <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-wrap content-page">
+    <h1 class="heading-accent">
+      <span class="low-highlight">Usability Overview — Manager &amp; Coach</span>
+    </h1>
+    <section class="section-block" aria-labelledby="overview-heading">
+      <article class="content-panel">
+        <p>In this page, I am going to do a usability overview on tasks for managers and coaches, detailing:</p>
+        <ul class="prose-list">
+          <li>Initial/current <strong>problems</strong></li>
+          <li><strong>Implemented solutions</strong></li>
+          <li><strong>Further enhancements</strong>/recommendations</li>
+        </ul>
+        <p>The problems detailed here mostly arise from our user testing, but I will also do my own analysis by going
+          through the app and some problems that I noticed while developing the frontend.</p>
+        <p>I will be recommending enhancements and solutions from both design and technical perspectives as the UI/UX
+          Designer and Frontend Developer.</p>
+      </article>
+    </section>
+    <section class="section-block" aria-labelledby="adding-players-heading">
+      <details class="section-details">
+        <summary class="section-heading">Adding Players to the Team</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li>A problem that arises during user testing with DkIT Sports is that the manager is having difficulties
+            keeping track of the players in the team, having to add each of their emails and details one-by-one.</li>
+          <iframe width="560" height="349" src="https://www.youtube.com/embed/rsnAruQhdfY" frameborder="0"
+            allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" class="usability-video-iframe"></iframe>
+        </ul>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li>Currently, we do not have a solution implemented yet for this problem, as we have time constraints that
+            does not allow us to dive deeper into this problem, so currently a solution that we can propose to the user
+            is to make some kind of Google form for the manager/coach to ask the players to fill in their email, and
+            then Google Form can generate a spreadsheet containing all the player's email data so the manager/coach can
+            look at it while entering the player details in our app.</li>
+        </ul>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li><strong>Importing data through spreadsheets</strong> - This can be used in combination with the Google
+            Form approach. We could provide the manager a template for them to distribute to their players to fill in
+            and we can implement the importing of a spreadsheet that contains the player details into our database
+            through the backend.</li>
+        </ul>
+      </details>
+    </section>
+    <section class="section-block" aria-labelledby=recording-statistics-heading">
+      <details class="section-details">
+        <summary class="section-heading">Recording Statistics (Duration, Matched Played)</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li>Initially, the manager needs to manually input the numbers for each player using a +, -, or entering the
+            total duration played by a player from their edit profile menu. This makes it hard for the manager to input
+            and keep track of the duration and matches played as they will need to do manual calculations.<br />
+            <iframe width="300" height="450" src="https://www.youtube.com/embed/sIUJup91YPc" title="Recording Duration"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen="" class="usability-video-iframe"></iframe>
+            <ul class="prose-list">
+              <li>We had a comprehensive analysis on the implementation of this feature during our Human Factors in
+                Design module, where we did a probe on the human error and performance, cognitive, and ergonomic
+                problems the user might face while doing this task, and a lot of problems did come up, some of them
+                including the user being cognitively overloaded and how the conditions would not support the user to do
+                such a hard task.</li>
+            </ul>
+          </li>
+        </ul>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li> <strong>Automatic calculation from duration inputed for each match </strong>- In order to reduce the
+            cognitive load of the manager/coach and improve the usability of the app, instead of having them manually
+            inputting the total duration played and matches started, we implemented this feature which automates the
+            calculation of those statistics by having the manager input the duration of the player for each match.</li>
+        </ul>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li> From my UI redesign from my Human Factors in Design module CA, I came up with a solution to help tackle
+            this problem, which is an implementation of a <strong>"Match Mode"</strong> that the manager can use during
+            a match to further automate the calculation of the duration. The Match Mode will feature a simplified UI
+            mode which will only feature specific functionalities that the manager/physio/coach will use during a match.
+            A button/switch will be implemented in the UI so that the manager/coach can click/toggle on it to switch to
+            this mode when a match is starting.<br />
+            <img width="542" height="383" alt="Screenshot 2024-04-20 at 06.20.37.png.1"
+              src="https://mahara.dkit.ie/artefact/file/download.php?file=455073&amp;view=128848&amp;embedded=1&amp;text=694629"><br />
+            <ul class="prose-list">
+              <li>The implementation of this mode would also be useful in calculating the matches started and matches
+                off the bench statistics we have, which currently still needs to be added manually by the manager/coach.
+                This mode can keep track of which players are starting on a particular match, as well as who is being
+                sent in as a substitute. Our current database does not support this so changes in the database would be
+                needed. Here is the proposed prototype:</li>
+            </ul>
+          </li>
+        </ul class="prose-list">
+        <ul class="prose-list">
+          <li>In addition to that, I also made a user testing test plan to test this functionality and get more insights
+            about its current usability, which can be seen here: </li>
+          <iframe class="pdf-frame" title="User testing recording duration (PDF)"
+            src="assets/pdf/User-Testing-Recording-Duration.pdf" allow="fullscreen"></iframe>
+        </ul>
+      </details>
+    </section>
+    <section class="section-block" aria-labelledby="changing-status-heading">
+      <details class="section-details">
+        <summary class="section-heading">Changing Line Up Status</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li> It is highlighted after the user testing with DkIT sports that the manager is having a hard time
+            selecting match line up, moving players from starting, sub, or reserves. Currently, the only way to do this
+            change is by going to the players profile -&gt; edit player -&gt; change lineup status.</li>
+          <iframe width="560" height="349" src="https://www.youtube.com/embed/rsnAruQhdfY" title="Recording Duration"
+            frameborder="0" class="usability-video-iframe"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen=""></iframe>
+        </ul>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li> Currently we haven't implemented any solutions for this problem as it is out of our scope and we didn’t
+            have enough time.</li>
+        </ul>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li><strong>Allowing changes to lineup status in match line up screen </strong>- Doing this will definitely
+            make it easier for the manager/coach to change the lineup status as this is the page where they can see the
+            current line up for the match. Having a drag and drop feature to move players around is also something that
+            could be considered.</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Luana Kimley · Team Pesado · PlayMetrix</p>
+    </div>
+  </footer>
+  <script src="js/nav.js" defer></script>
+</body>
+
+</html>

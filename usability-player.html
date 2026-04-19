@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Luana Kimley — Usability (Player)" />
+  <title>Usability Overview — Player</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="portfolio-topnav">
+    <div class="portfolio-topnav__inner">
+      <a class="nav-brand" href="index.html" rel="noopener noreferrer">
+        <img src="https://i.postimg.cc/x8w18HrD/playmetrix-logo.png" height="50" alt="PlayMetrix" />
+      </a>
+      <nav class="site-nav" aria-label="Portfolio pages">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li>
+            <details class="nav-details">
+              <summary>My Roles</summary>
+              <ul class="submenu">
+                <li><a href="frontend-developer.html">Frontend Developer</a></li>
+                <li><a href="ui-ux-designer.html">UI/UX Designer</a></li>
+                <li><a href="graphic-designer.html">Graphic Designer</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="nav-details">
+              <summary>Usability Overview</summary>
+              <ul class="submenu">
+                <li><a href="usability-general.html">General</a></li>
+                <li><a href="usability-manager-coach.html">Manager &amp; Coach</a></li>
+                <li><a href="usability-player.html" aria-current="page">Player</a></li>
+                <li><a href="usability-physio.html">Physio</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="journal.html">Technical Project Journal</a></li>
+          <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-wrap content-page">
+    <h1 class="heading-accent">
+      <span class="low-highlight">Usability Overview — Player</span>
+    </h1>
+    <section class="section-block" aria-labelledby="overview-heading">
+      <article class="content-panel">
+        <p>In this page, I am going to do a usability overview on tasks for players, detailing:</p>
+        <ul class="prose-list">
+          <li>Initial/current <strong>problems</strong></li>
+          <li><strong>Implemented</strong> <strong>solutions</strong></li>
+          <li><strong>Further enhancements</strong>/recommendations</li>
+        </ul>
+        <p>The problems detailed here mostly arise from our user testing, but I will also do my own analysis by going
+          through the app and some problems that I noticed while developing the frontend.</p>
+        <p>I will be recommending enhancements and solutions from both design and technical perspectives as the UI/UX
+          Designer and Frontend Developer.</p>
+      </article>
+    </section>
+    <section class="section-block" aria-labelledby="confirming-attendance-heading">
+      <details class="section-details">
+        <summary class="section-heading">Confirming Attendance to Events</summary>
+        <h3>Problem</h3>
+        <ul class="prose-list">
+          <li>Up to this stage, we haven't received any complaints/feedbacks about this task, but if I were to identify
+            a potential problem, it would be the way that the user currently can't go directly to the scheduled event
+            details from the notification tab. This would slower the time of doing this task as the user would need to
+            go to the schedule page -&gt; locate which event was just scheduled by clicking on the date -&gt; click on
+            the event -&gt; confirm attendance.</li>
+          <iframe width="300" height="450" src="https://www.youtube.com/embed/1jqOL7jsTws" frameborder="0"
+            allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen="" class="usability-video-iframe"></iframe>
+        </ul>
+        <h3>Implemented Solutions</h3>
+        <ul class="prose-list">
+          <li>Currently we have not implemented any solutions as it is not in our scope and it is not something crucial
+            that was brought up in the user tests.</li>
+        </ul>
+        <p> </p>
+        <h3>Further Enhancements</h3>
+        <ul class="prose-list">
+          <li>To solve this potential issue, something that we could do is by allowing the user to click on the
+            notifications and get directed to the related event that is notified. Doing this would involve changes in
+            the database and frontend. I would need to make the notification clickable using InkWell to allow redirect
+            onTap and pass in the related schedule_id to the ScheduleDetailsScreen().</li>
+        </ul>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Luana Kimley · Team Pesado · PlayMetrix</p>
+    </div>
+  </footer>
+  <script src="js/nav.js" defer></script>
+</body>
+
+</html>

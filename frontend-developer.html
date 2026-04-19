@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Luana Kimley — Frontend Developer (PlayMetrix)" />
+  <title>Frontend Developer — Luana's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="portfolio-topnav">
+    <div class="portfolio-topnav__inner">
+      <a class="nav-brand" href="index.html" rel="noopener noreferrer">
+        <img src="https://i.postimg.cc/x8w18HrD/playmetrix-logo.png" height="50" alt="PlayMetrix" />
+      </a>
+      <nav class="site-nav" aria-label="Portfolio pages">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li>
+            <details class="nav-details">
+              <summary>My Roles</summary>
+              <ul class="submenu">
+                <li>
+                  <a href="frontend-developer.html" aria-current="page">Frontend Developer</a>
+                </li>
+                <li><a href="ui-ux-designer.html">UI/UX Designer</a></li>
+                <li><a href="graphic-designer.html">Graphic Designer</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="nav-details">
+              <summary>Usability Overview</summary>
+              <ul class="submenu">
+                <li><a href="usability-general.html">General</a></li>
+                <li><a href="usability-manager-coach.html">Manager &amp; Coach</a></li>
+                <li><a href="usability-player.html">Player</a></li>
+                <li><a href="usability-physio.html">Physio</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="journal.html">Technical Project Journal</a></li>
+          <li><a href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page-wrap content-page">
+    <h1 class="heading-accent">
+      <span class="low-highlight">Frontend Developer</span>
+    </h1>
+
+    <section class="section-block" aria-labelledby="overview-heading">
+      <div class="content-two-col">
+        <article class="content-panel">
+          <h2 id="overview-heading">Overview</h2>
+          <p>
+            My main role in this group is as a Frontend Developer, my main job was to build the
+            <strong>frontend side</strong> of the application, which is the part of the
+            application the user interacts with, aiming to make it user friendly while also being
+            aesthetically pleasing to look at.
+          </p>
+          <p>The steps I took were to:</p>
+          <ol class="prose-list">
+            <li>Develop the non-functional <strong>structure</strong> of each pages.</li>
+            <li>
+              Specify what is shown on each pages based on the <strong>user role</strong>.
+            </li>
+            <li>
+              Develop the <strong>functionalities</strong> of each pages (connecting to backend).
+            </li>
+          </ol>
+        </article>
+        <article class="content-panel">
+          <h2 id="challenges-heading">Technical Challenges</h2>
+          <ul class="prose-list">
+            <li>Getting used to mobile development and the frontend framework I worked with.</li>
+            <li>
+              Making sure that the application is responsive and will look consistent between
+              different devices.
+            </li>
+            <li>
+              Finding and fixing possible bugs and catch errors in the frontend to ensure smooth
+              user experience.
+            </li>
+            <li>
+              Optimising the frontend for speed and efficiency by minimising requests and
+              optimising files.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="tech-heading">
+      <details class="section-details">
+        <summary id="tech-heading" class="section-heading">Frontend Technology</summary>
+        <p>
+          I chose to use <strong>Flutter</strong> with <strong>Dart</strong> programming language as
+          the frontend technology of choice.
+        </p>
+        <p class="tech-logos">
+          <img width="372" height="106" alt="Flutter logo"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=441111&amp;view=124421&amp;embedded=1&amp;text=671651" />
+          <img width="282" height="88" alt="Dart logo"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454993&amp;view=124421&amp;embedded=1&amp;text=671651" />
+        </p>
+        <p>
+          The <strong>research</strong> done for me to end up with that decision can be read here:
+        </p>
+        <iframe class="pdf-frame" title="Front-End Technologies Research (PDF)"
+          src="assets/pdf/Front-End-Technologies-Research.pdf" allow="fullscreen"></iframe>
+        <p>
+          While developing the app, I utilised several <strong>Flutter packages</strong>, such as:
+        </p>
+        <ul class="prose-list">
+          <li>
+            <a href="https://pub.dev/packages/syncfusion_flutter_calendar" rel="noopener noreferrer">Syncfusion Flutter
+              Calendar</a>
+            — calendar views
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/riverpod" rel="noopener noreferrer">Riverpod</a> —
+            state management
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/image_picker" rel="noopener noreferrer">Image Picker</a>
+            — picking and uploading images
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/input_quantity" rel="noopener noreferrer">Input Quantity</a>
+            — for editing statistics
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/twilio_flutter" rel="noopener noreferrer">Twilio</a> —
+            two-factor authentication using phone number (implemented by Conor)
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/introduction_screen" rel="noopener noreferrer">Introduction Screen</a>
+            — onboarding screens and feature showcase screens
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/shared_preferences" rel="noopener noreferrer">Shared Preferences</a>
+            — for implementing local sessions
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/file_picker" rel="noopener noreferrer">File Picker</a> —
+            for uploading injury report PDF
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/syncfusion_flutter_pdfviewer" rel="noopener noreferrer">Syncfusion Flutter
+              PDF Viewer</a>
+            — for viewing injury report PDF in-app
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/dropdown_search" rel="noopener noreferrer">Dropdown Search</a>
+            — for searching injuries within injury dropdown
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/google_sign_in" rel="noopener noreferrer">Google Sign In</a>
+            — Google SSO (implemented by Nathan)
+          </li>
+          <li>
+            <a href="https://pub.dev/packages/duration_picker" rel="noopener noreferrer">Duration Picker</a>
+            — for recording player duration
+          </li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="section-block" aria-labelledby="cross-device-heading">
+      <details class="section-details">
+        <summary id="cross-device-heading" class="section-heading">Cross-Device Consistency</summary>
+        <p>
+          One of the <strong>challenges</strong> I encountered after starting the development of the
+          application and doing some testing is
+          <strong>maintaining cross-device consistency</strong>. While developing the application, I
+          only considered testing it using one type of device, so when the tester tried it on
+          different devices, some of the pages look different and are not responsive at all.
+        </p>
+        <p>
+          We want our users to use our application with ease no matter what device they decide to
+          use, as we realised that it is important for users to have flexibility on what device they
+          want to use depending on the task they want to do and the environment they are at.
+        </p>
+        <p>
+          Rooting from this problem, I decided to do my <strong>research</strong> on how to maintain
+          cross-device consistency on Flutter applications, which can be read here:
+        </p>
+        <iframe class="pdf-frame" title="Cross-device consistency research (PDF)" src="assets/pdf/RM-CA2.pdf"
+          allow="fullscreen"></iframe>
+        <p>
+          I managed to develop PlayMetrix to be a cross-platform application with
+          <strong>consistent look and feel</strong> throughout various devices, which is tested on
+          <strong>desktop</strong>, <strong>tablet</strong>, and <strong>phone</strong>. Going
+          forward, I will look more into the way the app looks on desktops, as currently, the menu is
+          located at the bottom. If I were to further develop this, I will move the desktop
+          navigation bar into a side bar instead of having it at the bottom of the page.
+        </p>
+        <p>
+          <img width="1200" alt="PlayMetrix shown on multiple devices"
+            src="https://mahara.dkit.ie/artefact/file/download.php?file=454703&amp;view=124421&amp;embedded=1&amp;text=694690" />
+        </p>
+      </details>
+    </section>
+
+    <section class="section-block" aria-labelledby="folder-heading">
+      <details class="section-details">
+        <summary id="folder-heading" class="section-heading">Folder Structure</summary>
+        <div class="content-two-col">
+          <figure class="content-panel content-panel--figure">
+            <img loading="lazy" src="https://mahara.dkit.ie/artefact/file/download.php?file=455056&amp;view=124421"
+              alt="Screenshot of project folder structure in the IDE" />
+          </figure>
+          <div class="content-panel">
+            <p>
+              <strong>Maintaining an organised workspace</strong> is really something that I
+              overlooked when I started developing the app. Initially, I just had all my files in one
+              folder, and as more screens are being developed, it really became hard to keep track of
+              the files as they are all unorganised. I also had all the API calls and data models
+              inside the screens, which became confusing when I started doing the calls across
+              multiple screens.
+            </p>
+            <p>
+              After noticing this problem, I finally did a big refactor on the folder structure,
+              organising it into several different folders based on its types and functionalities.
+              This is definitely a really nice learning experience and something that I will keep in
+              mind for my future projects.
+            </p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="section-block" aria-labelledby="reflection-heading">
+      <details class="section-details">
+        <summary id="reflection-heading" class="section-heading">Reflection</summary>
+        <p>
+          Overall, I am really satisfied with what I have developed for PlayMetrix. I managed to
+          develop <strong>48 functional screens</strong> for our app that can
+          <strong>work across different devices</strong>. I am also happy that I got to learn new
+          technologies and gained new skills in mobile development using Flutter. Demos and
+          screenshots of some of the key features of our app can be viewed in the
+          <em>"Usability Overview (<a href="usability-general.html">General</a>,
+            <a href="usability-manager-coach.html">Manager &amp; Coach</a>,
+            <a href="usability-player.html">Player</a>,
+            <a href="usability-physio.html">Physio</a>)"</em>
+          section of my portfolio or in the
+          <em>"<a href="https://mahara.dkit.ie/view/view.php?id=125876" rel="noopener noreferrer">Frontend</a>"</em>
+          section of our team portfolio.
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>Luana Kimley · Team Pesado · PlayMetrix</p>
+    </div>
+  </footer>
+  <script src="js/nav.js" defer></script>
+</body>
+
+</html>
